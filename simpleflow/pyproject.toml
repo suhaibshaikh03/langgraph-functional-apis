@@ -1,0 +1,20 @@
+[project]
+name = "simpleflow"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "suhaibshaikh03", email = "suhaibshaikh2003@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "langgraph>=0.2.70",
+]
+
+[project.scripts]
+simpleflow = "simpleflow:main"
+piaic = "simpleflow.main:run_simple_flow"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
