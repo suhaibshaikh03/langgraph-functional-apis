@@ -1,0 +1,23 @@
+[project]
+name = "router-lg"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "suhaibshaikh03", email = "suhaibshaikh2003@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "langchain-google-genai>=2.0.9",
+    "langgraph>=0.2.72",
+    "pydantic>=2.10.6",
+    "python-dotenv>=1.0.1",
+]
+
+[project.scripts]
+router-lg = "router_lg:main"
+call = "router_lg.main:call_router"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
