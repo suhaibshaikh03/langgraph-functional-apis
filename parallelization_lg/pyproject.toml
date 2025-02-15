@@ -1,0 +1,20 @@
+[project]
+name = "parallelization-lg"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "suhaibshaikh03", email = "suhaibshaikh2003@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "langgraph>=0.2.72",
+]
+
+[project.scripts]
+parallelization-lg = "parallelization_lg:main"
+call = "parallelization_lg.main:call_parallel"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
